@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :admins, only: [:index, :show]
-  resources :concerts, only: [:index, :show]
+  namespace :api do
+    namespace :v1 do
+     resources :admins, only: [:show]
+     resources :concerts, only: [:index, :show, :create, :update, :destroy]
+    end
+   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
