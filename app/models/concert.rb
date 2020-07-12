@@ -1,3 +1,3 @@
 class Concert < ApplicationRecord
-    belongs_to: admin
+    belongs_to :admin
 end
