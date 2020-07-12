@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_07_12_100704) do
     t.string "event"
     t.string "location"
     t.string "more_info"
+    t.integer "admin_id"
     t.boolean "available"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
